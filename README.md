@@ -12,6 +12,7 @@ The goal is to identify the top-10 most frequent causes of failed food inspectio
 * Trend analysis over 10+ years
 
 **Part B: Token-Based Analysis of Violations**
+
 Building on Part A, the focus is to identify specific tokens that lead to failed food inspections using various text processing techniques.
 
 **Approach:**
@@ -21,6 +22,7 @@ Building on Part A, the focus is to identify specific tokens that lead to failed
 * Plot the most common tokens over time using the most effective technique
 
 **Part C: Predicting Inspection Outcomes with a Classification Model**
+
 In this part, we build a classification model that predicts the outcome of food safety inspections based on inspectors' comments.
 
 **Approach:**
@@ -28,3 +30,17 @@ In this part, we build a classification model that predicts the outcome of food 
 * Preprocess the text data using the most effective technique identified in Part B
 * Build and compare at least two text classification models (binary or multinomial)
 * Visualize and evaluate the model's performance
+
+<br>
+<br>
+<br>
+
+**How to Use**
+Run the provided Jupyter Notebooks (Chicago Food Safety Inspection Analysis_Starter1) to get started with the basic code.
+
+* **Part A:** Identify and visualize the top-10 causes of failed inspections.
+* **Part B:** Tokenize and clean violation descriptions, compare tokenization techniques, and analyze the most common tokens over time.
+* **Part C:** Build a classification model to predict food inspection outcomes based on inspector comments.
+Feel free to modify the notebooks, experiment with different models, or adjust the analysis based on your requirements.
+
+
