@@ -36,7 +36,7 @@ In this part, we build a classification model that predicts the outcome of food 
 <br>
 
 **How to Use**
-Run the provided Jupyter Notebooks (Chicago Food Safety Inspection Analysis_Starter1) to get started with the basic code.
+Run the provided Jupyter Notebooks (Chicago Food Safety Inspection Analysis_Starter1.ipynb) to get started with the basic code.
 
 * **Part A:** Identify and visualize the top-10 causes of failed inspections.
 * **Part B:** Tokenize and clean violation descriptions, compare tokenization techniques, and analyze the most common tokens over time.
