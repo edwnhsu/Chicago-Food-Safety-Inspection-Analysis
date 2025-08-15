@@ -1,54 +1,100 @@
-### Chicago Food Safety Inspection Analysis
-This project is part of the UChicago Applied Data Science program and focuses on promoting food safety in Chicago by analyzing failed food inspection data. It consists of three main parts:
+# 🍽️ Chicago Food Safety Inspection Analysis
 
-**Part A: Identifying Top-10 Causes of Failed Food Inspections**
+This project analyzes historical food inspection data from the City of Chicago to identify:
+- **Most common causes of failed inspections**
+- **Frequent violators and business types**
+- **Trends and patterns over time**
 
-The goal is to identify the top-10 most frequent causes of failed food inspections and present the findings clearly. The dataset is sourced from the City of Chicago’s Health and Human Services.
+The analysis aims to promote public health and safety by making inspection insights accessible to the public and stakeholders.
 
-**Steps:**
-* Data selection and cleaning
-* Parsing violation descriptions
-* Visualizing the top-10 most frequent causes of failed inspections
-* Trend analysis over 10+ years
-  
-<br>
-<br>
-<br>
+---
 
-**Part B: Token-Based Analysis of Violations**
+## 📌 Project Goals
 
-Building on Part A, the focus is to identify specific tokens that lead to failed food inspections using various text processing techniques.
+1. **Identify top violation patterns** that result in failed food inspections.
+2. **Tokenize and parse violation descriptions** using various NLP techniques to find key failure phrases.
+3. **Build a classification model** to predict inspection outcomes based on inspectors' comments.
+4. **Visualize insights** for easy interpretation by the public and business owners.
 
-**Approach:**
-* Tokenize the violation descriptions and inspector comments
-* Remove stopwords, punctuation, and perform stemming and lemmatization
-* Compare the top-10 tokens obtained through different text-cleaning techniques (Porter stemming, Lancaster stemming, lemmatization)
-* Plot the most common tokens over time using the most effective technique
+---
 
-<br>
-<br>
-<br>
+## 🧠 Key Insights
 
-**Part C: Predicting Inspection Outcomes with a Classification Model**
+### 1) Distribution of Inspection Results
+Bar chart of results by outcome category.  
+*Example:*  
+![Inspection Results](images/inspection_results_distribution.png)
 
-In this part, we build a classification model that predicts the outcome of food safety inspections based on inspectors' comments.
+### 2) Top 10 Common Violation Descriptions
+The most frequently cited reasons for failed inspections.  
+*Example:*  
+![Top Violations](images/top_violations.png)
 
-**Approach:**
-* Extract free-form text comments from the dataset
-* Preprocess the text data using the most effective technique identified in Part B
-* Build and compare at least two text classification models (binary or multinomial)
-* Visualize and evaluate the model's performance
+### 3) Frequent Repeat Offenders
+Restaurants or facilities that repeatedly fail inspections.  
+*Example:*  
+![Repeat Offenders](images/repeat_offenders.png)
 
-<br>
-<br>
-<br>
+### 4) NLP Parsing of Violation Descriptions
+Tokenized descriptions of violations using techniques like:
+- Lowercasing
+- Stopword removal
+- Lemmatization / Stemming
+- Regex filtering
 
-**How to Use:**\
-Run the provided Jupyter Notebooks (Chicago Food Safety Inspection Analysis_Starter1.ipynb) to get started with the basic code.
+Comparison of different pre-processing techniques is shown in Part B.
 
-* **Part A:** Identify and visualize the top-10 causes of failed inspections.
-* **Part B:** Tokenize and clean violation descriptions, compare tokenization techniques, and analyze the most common tokens over time.
-* **Part C:** Build a classification model to predict food inspection outcomes based on inspector comments.
-Feel free to modify the notebooks, experiment with different models, or adjust the analysis based on your requirements.
+---
 
+## 🔍 Project Structure
 
+```plaintext
+.
+├── notebooks/
+│   ├── Chicago Food Safety Inspection Analysis_Starter1.ipynb  # Part A: EDA and Violation Parsing
+│   ├── Chicago_Food_Inspections_Analysis_1.ipynb               # Part B: NLP Token Analysis
+│   ├── Chicago_Food_Inspections_Analysis_2.ipynb               # Part C: Classification Model
+│   └── Chicago_Food_Inspections_Analysis_3.ipynb               # Part D: Visualization and Reporting
+├── images/                                                     # Extracted charts
+├── requirements.txt                                            # Python dependencies
+└── README.md                                                   # This file
+```
+
+---
+
+## 🚀 How to Reproduce
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/edwnhsu/Chicago-Food-Safety-Inspection-Analysis.git
+cd Chicago-Food-Safety-Inspection-Analysis
+```
+
+### 2. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the Notebooks
+Open each notebook in the `notebooks/` folder to explore different parts of the analysis:
+- **Part A**: Exploratory Data Analysis
+- **Part B**: Violation Token Analysis
+- **Part C**: Text Classification Model
+- **Part D**: Final Visualization and Reporting
+
+---
+
+## 🧪 Techniques Used
+- **Pandas, Matplotlib, Seaborn** for data manipulation and visualization
+- **NLTK, spaCy** for text pre-processing
+- **Scikit-learn** for building classification models
+- **WordClouds and Frequency Analysis**
+- **Regex and string parsing**
+
+---
+
+## 📬 Contact
+
+**Yu-Wei (Edwin) Hsu**  
+GitHub: [@edwnhsu](https://github.com/edwnhsu)  
+Email: edwinhsu@uchicago.edu
