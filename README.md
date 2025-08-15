@@ -51,13 +51,14 @@ Comparison of different pre-processing techniques is shown in Part B.
 ```plaintext
 .
 ├── notebooks/
-│   ├── Chicago Food Safety Inspection Analysis_Starter1.ipynb  # Part A: EDA and Violation Parsing
-│   ├── Chicago_Food_Inspections_Analysis_1.ipynb               # Part B: NLP Token Analysis
-│   ├── Chicago_Food_Inspections_Analysis_2.ipynb               # Part C: Classification Model
-│   └── Chicago_Food_Inspections_Analysis_3.ipynb               # Part D: Visualization and Reporting
-├── images/                                                     # Extracted charts
-├── requirements.txt                                            # Python dependencies
-└── README.md                                                   # This file
+│ ├── Chicago Food Safety Inspection Analysis_Starter1.ipynb # Part A: EDA and Violation Parsing
+│ ├── Chicago_Food_Inspections_Analysis_1.ipynb # Part B: NLP Token Analysis
+│ ├── Chicago_Food_Inspections_Analysis_2.ipynb # Part C: Classification Model
+│ └── Chicago_Food_Inspections_Analysis_3.ipynb # Part D: Visualization and Reporting
+├── images/ # Generated charts and visualizations
+├── html:pdf/ # Exported reports (HTML and PDF)
+├── requirements.txt # Python dependencies
+└── README.md # Project overview and instructions
 ```
 
 ---
